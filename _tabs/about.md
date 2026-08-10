@@ -4,5 +4,26 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## 👋 自我介紹
+
+我喜歡品嚐美食、玩遊戲和烹飪，也很享受思考與解決問題的過程。成功解決問題後的成就感，也讓我更有動力挑戰新的事物。
+
+## 🎓 求學經歷
+
+- 臺北市立大學 — 資訊科學系  
+  *2022/09 – now*
+
+## 🏆 CTF 成績
+
+- **IronCTF 2024** — 29 / 1033  
+- **Hackers N' Hops 2024** — 40 / 341  
+- **1337up LIVE CTF 2024** — 66 / 1061  
+- **0xL4ugh CTF 2024** — 104 / 320  
+- **irisCTF 2025** — 242 / 1553  
+- **Pearl CTF 2025** — 44 / 1024  
+
+---
+
+## ✨ 其他經歷
+
+- **2023 城市儀表板大黑客松**
