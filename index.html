@@ -1,4 +1,243 @@
 ---
-layout: home
-# Index page
+layout: default
+title: HaBi
 ---
+
+<style>
+  .habi-home {
+    max-width: 760px;
+    padding: 3.5rem 0 5rem;
+  }
+
+  .habi-hero {
+    margin-bottom: 4.5rem;
+  }
+
+  .habi-hero h1 {
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.25rem;
+  }
+
+  .habi-intro {
+    max-width: 560px;
+    font-size: 1.12rem;
+    line-height: 1.9;
+    color: var(--text-muted-color);
+  }
+
+  .habi-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .habi-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--main-border-color);
+    border-radius: 0.75rem;
+    text-decoration: none !important;
+    color: var(--text-color);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+
+  .habi-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .habi-section {
+    margin-bottom: 4rem;
+  }
+
+  .habi-label {
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--text-muted-color);
+  }
+
+  .now-list {
+    display: grid;
+    gap: 1.4rem;
+  }
+
+  .now-item {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 0.6rem;
+  }
+
+  .now-item strong {
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  .now-item span {
+    color: var(--text-muted-color);
+  }
+
+  .project-card {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid var(--main-border-color);
+    border-radius: 1rem;
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .project-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .project-card p {
+    margin: 0.75rem 0 1rem;
+    color: var(--text-muted-color);
+  }
+
+  .project-tags {
+    font-size: 0.8rem;
+    color: var(--text-muted-color);
+  }
+
+  .post-list-home {
+    display: grid;
+    gap: 0;
+  }
+
+  .post-row {
+    display: grid;
+    grid-template-columns: 7rem 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--main-border-color);
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+  }
+
+  .post-date {
+    font-size: 0.85rem;
+    color: var(--text-muted-color);
+  }
+
+  .empty-posts {
+    padding: 1.5rem 0;
+    color: var(--text-muted-color);
+    line-height: 1.8;
+  }
+
+  @media (max-width: 576px) {
+    .habi-home {
+      padding-top: 2rem;
+    }
+
+    .habi-hero {
+      margin-bottom: 3.5rem;
+    }
+
+    .post-row {
+      grid-template-columns: 1fr auto;
+    }
+
+    .post-date {
+      grid-column: 1 / -1;
+    }
+  }
+</style>
+
+<div class="habi-home">
+
+  <section class="habi">
+    <div class="habi-intro">
+      這裡是我的網路小角落。<br>
+      放一些做過的東西、學到的東西，還有偶爾冒出來的想法。
+    </div>
+
+    <div class="habi-links">
+      <a class="habi-button"
+         href="https://github.com/HaBiOwO"
+         target="_blank"
+         rel="noopener">
+        GitHub ↗
+      </a>
+
+      <a class="habi-button" href="/about/">
+        關於我 →
+      </a>
+    </div>
+  </section>
+
+
+  <section class="habi-section">
+    <div class="habi-label">NOW</div>
+
+    <div class="now-list">
+
+      <div class="now-item">
+        <div>🛠</div>
+        <div>
+          <strong>最近在弄</strong>
+          <span>把這個網站慢慢整理成自己的樣子。</span>
+        </div>
+      </div>
+
+      <div class="now-item">
+        <div>🌱</div>
+        <div>
+          <strong>最近在學</strong>
+          <span>還在探索中...</span>
+        </div>
+      </div>
+
+      <div class="now-item">
+        <div>☕</div>
+        <div>
+          <strong>最近的狀態</strong>
+          <span>在電腦前東摸西摸。</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="habi-section">
+    <div class="habi-label">PROJECTS</div>
+
+    <a class="project-card"
+       href="https://github.com/HaBiOwO/habiowo.github.io"
+       target="_blank"
+       rel="noopener">
+
+      <div class="project-title">
+        <span>habiowo.github.io</span>
+        <span>↗</span>
+      </div>
+
+      <p>
+        你現在正在看的這個小小網路基地。
+      </p>
+
+      <div class="project-tags">
+        Jekyll · Chirpy · GitHub Pages
+      </div>
+
+    </a>
+  </section>
+
+</div>
